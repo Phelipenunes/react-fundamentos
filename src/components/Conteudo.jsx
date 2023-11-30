@@ -1,4 +1,5 @@
 import Artigo from "./Artigo";
+import "./index.css";
 function Conteudo() {
   return (
     <>
