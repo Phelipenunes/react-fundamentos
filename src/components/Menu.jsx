@@ -9,11 +9,18 @@ const StyledMenu = styled.nav`
   a {
     color: white;
     text-decoration: none;
-  }
+    width: 30%;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: transform 100ms;
 
-  a:hover {
-    background-color: pink;
-    color: black;
+    &:hover {
+      background-color: pink;
+      color: black;
+      transform: scale(0.6s);
+    }
   }
 `;
 function Menu() {
