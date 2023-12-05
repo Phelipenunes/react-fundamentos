@@ -1,6 +1,8 @@
 import { StyledConteudo } from "../Style.js";
 import Artigo from "./Artigo";
 
+const data = ["25/10/2001", "30/08/1992", "30/02/2024"];
+
 function Conteudo() {
   return (
     <>
@@ -17,9 +19,24 @@ function Conteudo() {
           itaque incidunt rem.
         </p>
         <div>
-          <Artigo />
-          <Artigo />
-          <Artigo />
+          <Artigo
+            icone="👍"
+            titulos="Senhor dos Anéis"
+            descricao="Livro criado por Tokien."
+            datalancamento={data[0]}
+          />
+          <Artigo
+            icone="✌"
+            titulos="Game Of Thrones"
+            descricao="Aventura maluca com gente sempre morrendo."
+            datalancamento={data[1]}
+          />
+          <Artigo
+            icone="🤞"
+            titulos="HTML5 e CSS3"
+            descricao="Fonte de estudos para quem quer começar no Front-End"
+            datalancamento={data[2]}
+          />
         </div>
       </StyledConteudo>
     </>

@@ -1,11 +1,20 @@
 import { StyledArtigo } from "../Style.js";
 
-function Artigo() {
+/* const data = [
+  "25/10/2001",
+  "30/08/1992",
+  "30/02/2024"
+] */
+
+function Artigo(props) {
   return (
     <>
       <StyledArtigo>
-        <h3>Artigo 1</h3>
-        <p>Conteúdo do artigo 1</p>
+        <h3>
+          {props.titulos} {props.icone}
+        </h3>
+        <p> {props.descricao}</p>
+        <p>lançado em : {props.datalancamento}</p>
       </StyledArtigo>
     </>
   );
