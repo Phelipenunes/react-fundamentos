@@ -1,11 +1,5 @@
 import { StyledArtigo } from "../Style.js";
 
-/* const data = [
-  "25/10/2001",
-  "30/08/1992",
-  "30/02/2024"
-] */
-
 function Artigo(props) {
   return (
     <>
@@ -15,6 +9,8 @@ function Artigo(props) {
         </h3>
         <p> {props.descricao}</p>
         <p>lançado em : {props.datalancamento}</p>
+        <img src={props.imagem} />
+        {props.children}
       </StyledArtigo>
     </>
   );
