@@ -1,16 +1,16 @@
 import { StyledArtigo } from "../Style.js";
 
-function Artigo(props) {
+function Artigo({ titulo, categoria, preco }) {
   return (
     <>
       <StyledArtigo>
-        <h3>
-          {props.titulos} {props.icone}
-        </h3>
-        <p> {props.descricao}</p>
-        <p>lançado em : {props.datalancamento}</p>
-        <img src={props.imagem} />
-        {props.children}
+        <h3>{titulo}</h3>
+        <p>
+          <b>Curso: {categoria}</b>
+        </p>
+        <p>
+          <b>Preço: {preco}</b>
+        </p>
       </StyledArtigo>
     </>
   );

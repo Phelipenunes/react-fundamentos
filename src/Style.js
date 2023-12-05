@@ -20,7 +20,7 @@ export const Styledcabecalho = styled.header`
 //Conteúdo
 export const StyledConteudo = styled.main`
   width: 90vw;
-  height: 70vh;
+  height: 100vh;
   margin: 1rem auto;
   background-color: aliceblue;
   padding: 1rem;
@@ -31,12 +31,9 @@ export const StyledConteudo = styled.main`
     padding: 0.2rem 0;
   }
 
-  div {
+  .principal {
     @media (min-width: 650px) {
       display: flex;
-      justify-content: space-around;
-      align-items: center;
-      gap: 20px;
     }
   }
 `;
@@ -49,12 +46,8 @@ export const StyledArtigo = styled.article`
   margin-bottom: 0.5rem;
 
   h3 {
-    color: orange;
-    border-bottom: solid 2px orange;
-  }
-
-  p {
-    font-size: 1.1rem;
+    color: purple;
+    border-bottom: solid 2px purple;
   }
 `;
 
