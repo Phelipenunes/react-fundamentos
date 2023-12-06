@@ -1,12 +1,12 @@
 import { StyledArtigo } from "../Style.js";
 
-function Artigo({ titulo, categoria, preco }) {
+function Artigo({ handleClick, titulo, categoria, preco }) {
   return (
     <>
-      <StyledArtigo>
-        <h3>{titulo}</h3>
+      <StyledArtigo onClick={handleClick}>
+        <h3>{categoria}</h3>
         <p>
-          <b>Curso: {categoria}</b>
+          <b>Curso: {titulo}</b>
         </p>
         <p>
           <b>Preço: {preco}</b>

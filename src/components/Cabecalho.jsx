@@ -4,7 +4,7 @@ import { Styledcabecalho } from "../Style.js";
 function Cabecalho() {
   return (
     <Styledcabecalho>
-      <h1>Olá react! 👍</h1>
+      <h1 onClick={() => alert("Exemplo 1")}>Olá react! 👍</h1>
       <hr />
       <Menu />
     </Styledcabecalho>
